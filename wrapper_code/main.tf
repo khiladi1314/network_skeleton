@@ -1,0 +1,32 @@
+module "network" {
+source                         = ""
+  region                         = var.region
+  vpc_cidr                       = var.vpc_cidr
+  vpc_tags                       = var.vpc_tags
+  vpc_enable_dns_support         = var.vpc_enable_dns_support
+  vpc_enable_dns_hostnames       = var.vpc_enable_dns_hostnames
+  public_subnets_cidr            = var.public_subnets_cidr
+  aws_region                     = var.aws_region
+  elastic_ip                     = var.elastic_ip
+  enable_map_public_ip_on_launch = var.enable_map_public_ip_on_launch
+  public_subnets_tags            = var.public_subnets_tags
+  private_subnets_cidr           = var.private_subnets_cidr
+  private_subnets_tags           = var.private_subnets_tags
+  igw_tags                       = var.igw_tags
+  nat                            = var.nat 
+  nat_tags                       = var.nat_tags
+  public_route_table_tags        = var.public_route_table_tags
+  private_route_table_tags       = var.private_route_table_tags
+  specific_subnet_AZ01           = var.specific_subnet_AZ01
+  specific_subnet_AZ02           = var.specific_subnet_AZ02     
+  frontend_nacl_ingress          = var.frontend_nacl_ingress
+  frontend_nacl_egress           = var.frontend_nacl_egress
+  frontend_nacl_tags             = var.frontend_nacl_tags
+  backend_nacl_ingress           = var.backend_nacl_ingress
+  backend_nacl_egress            = var.backend_nacl_egress
+  backend_nacl_tags              = var.backend_nacl_tags
+  db_nacl_ingress                = var.db_nacl_ingress
+  db_nacl_egress                 = var.db_nacl_egress
+  db_nacl_tags                   = var.db_nacl_tags
+  
+}
