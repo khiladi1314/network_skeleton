@@ -1,5 +1,5 @@
 module "network" {
-source                         = ""
+source                         = "./NETWORK_SKELETON"
   region                         = var.region
   vpc_cidr                       = var.vpc_cidr
   vpc_tags                       = var.vpc_tags
